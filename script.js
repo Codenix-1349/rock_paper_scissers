@@ -5,6 +5,8 @@ if (!moves.includes(player)) {
   console.log("Syntax: node rps.js rock|paper|scissors");
   process.exit(1);
 }
+/* Fehlercode bei bedarf ausgeben:
+node rps.js rock; echo Exit-Code: $? */
 
 const computer = moves[Math.floor(Math.random() * moves.length)];
 
